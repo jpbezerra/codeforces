@@ -5,14 +5,14 @@ def main
     polices = 0
   
     for i in 0...crimes
-        if scenes[i] > -1
+        if scenes[i] != -1
             polices += scenes[i]
-        end
-  
-        if scenes[i] == -1 && polices > 0
-            polices -= 1
-        elsif scenes[i] == -1 && polices <= 0
-            untreated += 1
+        else
+            if polices > 0
+                polices -= 1
+            elsif polices <= 0
+                untreated += 1
+            end
         end
     end
   
