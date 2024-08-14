@@ -18,6 +18,7 @@ public class Main {
         Collections.sort(arr);
         System.out.printf("%d", arr.get(0));
         size = arr.size();
+        
         for (int i = 1; i < size; i++) {
             System.out.printf("+%d", arr.get(i));
         }
