@@ -13,5 +13,7 @@ public class Main {
         for (int i = 0; i < cases; i++) {
             System.out.printf("%d ", result[i]);
         }
+
+        result = null;
     }
 }
