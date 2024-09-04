@@ -11,18 +11,18 @@ func main() {
 		fmt.Scan(&polyhedron)
 
 		switch polyhedron {
-		case "Tetrahedron":
-			faces += 4
-		case "Cube":
-			faces += 6
-		case "Octahedron":
-			faces += 8
-		case "Dodecahedron":
-			faces += 12
-		case "Icosahedron":
-			faces += 20
-		default:
-			continue
+			case "Tetrahedron":
+				faces += 4
+			case "Cube":
+				faces += 6
+			case "Octahedron":
+				faces += 8
+			case "Dodecahedron":
+				faces += 12
+			case "Icosahedron":
+				faces += 20
+			default:
+				continue
 		}
 	}
 
